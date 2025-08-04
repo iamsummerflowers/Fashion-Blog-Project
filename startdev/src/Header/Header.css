@@ -1,10 +1,16 @@
 :root {
---header-vert: 2.5rem;
---header-bg-color: #a0a4b8;
+/* --header-vert: 2.5rem; */
+--header-vert: 0rem;
+/* --header-bg-color: #a0a4b8; */
+--header-bg-color: white;
 --header-font: "Open Sans", sans-serif;
 --header-fontSize: 1rem;
 --header-fontColor: black;
 --header-border: solid 2px #a0a4b8;
+--header-navlogo-font-style: "Times New Roman";
+--header-navlinks-color: black;
+--subscribe-btn-color: #a0a4b8;
+--subscribe-btnhover-color: #626470;
 }
 
 *, *::before, *::after {
@@ -13,12 +19,14 @@
   }
 
 .header {
-  display: block;
+  display: flex;
+  align-items: center;
   width: 100%;
   margin: var(--header-vert) 1.5rem;
   background-color: var(--header-bg-color);
-  text-align: left;
-  padding-left: 2.5rem;
+  /* text-align: left; */
+  /* padding-left: 2.5rem; */
+  padding: 0 1.5rem;
   border: var(--header-border);
 }
 
@@ -32,6 +40,37 @@
 
 .header > a:hover {
   font-weight: bold; /* "When a user hovers over the link the text hover styles should be present*/
+}
+
+#nav-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: var(--header-navlogo-font-style);
+}
+
+#nav-links {
+  display: flex;
+}
+
+#nav-links > a {
+  margin: 0 0.5rem;
+  color: var(--header-navlinks-color);
+  text-decoration: none;
+}
+
+#subscribe-btn {
+  background-color: var(--subscribe-btn-color);
+  width: 8rem;
+  color: white !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.header div > #subscribe-btn:hover {
+  background-color: var(--subscribe-btnhover-color) !important;
+  font-weight: 400 !important;
 }
 
 /* Tablet */
