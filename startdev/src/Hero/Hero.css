@@ -1,0 +1,135 @@
+:root {
+    --hero-bg-color: rgb(160, 164, 184, 0.7); 
+    --main-vert: 2.5rem;
+    --holdsAllCards-vert: 2.5rem;
+    --holdsAllCards-horz: 2.5rem;
+    --holdsAllCards-gap: 1rem;
+    --heading-font: "Gugi", sans-serif;
+    --heading-fontSize: 2.5rem;
+    --heading-fontColor: black;
+    --blurb-font: "Open Sans", sans-serif;
+    --blurb-fontSize: 1rem;
+    --blurb-fontColor: black;
+    --hero-btn1-color: rgb(160, 164, 184, 1);
+    --hero-btn2-color: rgb(211, 215, 238); 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.hero {
+  position: relative;
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  background-image: url('../assets/ricardo-gomez-angel.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.heroComponents{
+    background-color: var(--hero-bg-color);
+    height: 35vh;
+    width: 100%;
+    letter-spacing: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    float: left;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+    text-align: left;
+    padding: 2rem 0;
+}
+
+.heroHeading {
+    font-family: var(--heading-font);
+    font-size: var(--heading-fontSize);
+    color: var(--heading-fontColor);
+    width: 60%;
+    margin: 5px 50px;
+    text-align: left;
+}
+
+.heroBlurb {
+    font-family: var(--blurb-font);
+    font-size: var(--blurb-fontSize);
+    color: var(--blurb-fontColor);
+    width: 60%;
+    margin: 5px 50px;
+    text-align: left;
+}
+
+.heroButton-container {
+    width: 60%;
+    margin: 20px 50px;
+
+    display: flex;
+    text-align: center;
+}
+
+.heroButton-wrap {
+    /* margin: 0 50px; */
+    text-align: center;
+    width: auto;
+}
+
+.heroButton-1, .heroButton-2 {
+    background-color: var(--hero-btn1-color);
+    font-size: 0.8rem;
+    width: 8rem;
+    color: white !important;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 10px 0 0px;
+}
+
+.holdsAllCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: var(--temp-color-2); */
+    width: 20rem;
+    margin: 0 auto;
+    gap: var(--holdsAllCards-gap);
+}
+
+
+/*---------- Smaller Screen ----------*/
+@media (min-width: 888px) {
+
+    .holdsAllCards {
+          display: flex;
+          flex-direction: row;
+          width: auto;
+          margin: var(--holdsAllCards-vert) var(--holdsAllCards-horz);
+          max-width: 888px;
+          margin: 0 auto;
+    }
+  
+  }
+
+/*---------- XXL ----------*/
+@media (min-width: 1440px) {
+
+  .holdsAllCards {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin: var(--holdsAllCards-vert) var(--holdsAllCards-horz);
+        max-width: 1440px;
+        margin: 0 auto;
+  }
+
+}
