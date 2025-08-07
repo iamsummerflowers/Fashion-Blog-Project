@@ -30,24 +30,24 @@ function Header() {
             <MdOutlineClose className="mobile-menu-toggle2" onClick={toggleMobileNav}/>
           </div>
           <div className="nav-links">
-            <HashLink smooth to="#hero" target="_self" rel="noopener noreferrer">
+            <HashLink smooth to="#hero" target="_self" rel="noopener noreferrer" onClick={toggleMobileNav}>
               <p>Home</p>
             </HashLink>
-            <HashLink smooth to="#articles" target="_self" rel="noopener noreferrer">
+            <HashLink smooth to="#articles" target="_self" rel="noopener noreferrer" onClick={toggleMobileNav}>
               <p>Articles</p>
             </HashLink>
-            <Link to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
+            <Link to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer" onClick={toggleMobileNav}>
               <p>Collections</p>
             </Link>
-            <Link to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
+            <Link to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer" onClick={toggleMobileNav}>
               <p>About</p>
             </Link>
-            <HashLink smooth to="#footer" target="_self" rel="noopener noreferrer">
+            <HashLink smooth to="#footer" target="_self" rel="noopener noreferrer" onClick={toggleMobileNav}>
               <p>Contact</p>
             </HashLink>
           </div>
           <div className="subscribe-btn-container">
-            <HashLink smooth to="#newsletter" className="subscribe-btn" target="_self" rel="noopener noreferrer">
+            <HashLink smooth to="#newsletter" className="subscribe-btn" target="_self" rel="noopener noreferrer" onClick={toggleMobileNav}>
               Subscribe
             </HashLink>
           </div>
