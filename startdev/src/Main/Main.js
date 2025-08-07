@@ -6,9 +6,9 @@ import logo from '../assets/logoBrain.svg'
 
 function Main() {
   return (
-    <div className="main">
+    <div className="main" id="articles">
       <div className="mainSubheader">
-        <h1>startDEV</h1>
+        <h1>Articles</h1>
         <img src={logo} alt="Logo"/>
       </div>
       <div className="holdsAllCards">

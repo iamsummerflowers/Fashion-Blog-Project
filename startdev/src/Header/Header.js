@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { HashLink } from 'react-router-hash-link';
 import './Header.css';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -29,26 +30,26 @@ function Header() {
             <MdOutlineClose className="mobile-menu-toggle2" onClick={toggleMobileNav}/>
           </div>
           <div className="nav-links">
-            <Link to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
+            <HashLink smooth to="#hero" target="_self" rel="noopener noreferrer">
               <p>Home</p>
-            </Link>
-            <Link to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
+            </HashLink>
+            <HashLink smooth to="#articles" target="_self" rel="noopener noreferrer">
               <p>Articles</p>
-            </Link>
+            </HashLink>
             <Link to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
               <p>Collections</p>
             </Link>
             <Link to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
               <p>About</p>
             </Link>
-            <Link to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
+            <HashLink smooth to="#footer" target="_self" rel="noopener noreferrer">
               <p>Contact</p>
-            </Link>
+            </HashLink>
           </div>
           <div className="subscribe-btn-container">
-            <Link className="subscribe-btn" to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
+            <HashLink smooth to="#newsletter" className="subscribe-btn" target="_self" rel="noopener noreferrer">
               Subscribe
-            </Link>
+            </HashLink>
           </div>
         </div>
 
@@ -62,26 +63,26 @@ function Header() {
             <p>CURATED</p>
           </div>
           <div className="nav-links">
-            <Link to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
+            <HashLink smooth to="#hero" target="_self" rel="noopener noreferrer">
               <p>Home</p>
-            </Link>
-            <Link to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
+            </HashLink>
+            <HashLink smooth to="#articles" target="_self" rel="noopener noreferrer">
               <p>Articles</p>
-            </Link>
+            </HashLink>
             <Link to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
               <p>Collections</p>
             </Link>
             <Link to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
               <p>About</p>
             </Link>
-            <Link to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
+            <HashLink smooth to="#footer" target="_self" rel="noopener noreferrer">
               <p>Contact</p>
-            </Link>
+            </HashLink>
           </div>
           <div>
-            <Link className="subscribe-btn" to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
+            <HashLink smooth to="#newsletter" className="subscribe-btn" target="_self" rel="noopener noreferrer">
               Subscribe
-            </Link>
+            </HashLink>
           </div>
       </div>
     </nav>

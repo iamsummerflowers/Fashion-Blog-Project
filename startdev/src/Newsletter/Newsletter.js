@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Newsletter() {
   return (
-    <section className="Newsletter">
+    <section className="Newsletter" id="newsletter">
 
       <div className="newsletterComponents">
         <h1 className="newsletterHeading">Newsletter</h1>
