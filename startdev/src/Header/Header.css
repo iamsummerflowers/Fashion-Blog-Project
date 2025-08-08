@@ -53,6 +53,7 @@
   /* padding-left: 2.5rem; */
   padding: 0 1.5rem;
   border: var(--header-border);
+  overflow: hidden;
 }
 
 .header > a {
@@ -64,7 +65,8 @@
 }
 
 .header > a:hover {
-  font-weight: bold; /* "When a user hovers over the link the text hover styles should be present*/
+  font-weight: bold; 
+  /* "When a user hovers over the link the text hover styles should be present*/
 }
 
 .nav-logo {
@@ -89,18 +91,26 @@
   color: white !important;
   padding: 0.6rem 1.2rem;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  transition: font-weight 0.5s ease;
+  transition: background-color 0.8s ease;
   text-decoration: none;
 }
 
-.header div > #subscribe-btn:hover {
+.subscribe-btn:hover {
   background-color: var(--subscribe-btnhover-color) !important;
-  font-weight: 400 !important;
+  font-weight: bold !important;
 }
 
 /* Tablet */
 
 @media (max-width: 768px) {
+  .nav-container {
+    /* display: flex; */
+    /* width: 100%; */
+    /* margin: 0; */
+    /* flex-direction: column; */
+  }
+
   .header {
     display: none;
   }

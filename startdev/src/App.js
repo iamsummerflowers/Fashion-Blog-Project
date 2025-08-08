@@ -12,11 +12,11 @@ import Footer from './Footer/Footer.js';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <Main />
-      <Newsletter />
-      <Footer />
+      <Header id="appHeader"/>
+      <Hero id="appHero" />
+      <Main id="appMain"/>
+      <Newsletter id="appNewsletter"/>
+      <Footer id="appFooter"/>
     </div>
   );
 }

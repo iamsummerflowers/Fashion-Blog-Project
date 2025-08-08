@@ -9,6 +9,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
   width: 100%;
+
 }
 
 html {
@@ -20,13 +21,24 @@ html {
   background-color: var(--background-color);
   text-align: center;
   min-height: 100vh;
+  width: auto;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   
 }
+
+#appHeader {
+  position: relative;
+}
+
+#appHero {
+  position: relative;
+}
+
 
 /* after the fact */
 
@@ -57,6 +69,8 @@ html {
     transform: rotate(360deg);
   }
 }
+
+
 
 /*---------- XXL ----------*/
 @media (min-width: 1440px) {

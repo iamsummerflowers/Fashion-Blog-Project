@@ -27,6 +27,7 @@
   align-items: center;
   flex-direction: row;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .footer > div {
@@ -54,7 +55,7 @@
   transition: font-weight 0.3s ease; /* "When a user hovers over the link the hover styles transition gradually*/
 }
 
-a:hover {
+#twos:hover {
   font-weight: bold; /* "When a user hovers over the link the text hover styles should be present*/
 }
 

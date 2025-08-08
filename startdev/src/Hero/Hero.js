@@ -15,7 +15,7 @@ function Hero() {
         <div className="heroButton-container">
             <div className="heroButton-wrap">
               <Link className="heroButton-1" to="https://thinktoprod.com" target="_blank" rel="noopener noreferrer">
-                Start Exploring
+                Explore Now
               </Link>
             </div>
             <div className="heroButton-wrap">

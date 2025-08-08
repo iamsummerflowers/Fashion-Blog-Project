@@ -1,17 +1,15 @@
 :root {
     --hero-bg-color: rgb(160, 164, 184, 0.7); 
     --main-vert: 2.5rem;
-    --holdsAllCards-vert: 2.5rem;
-    --holdsAllCards-horz: 2.5rem;
-    --holdsAllCards-gap: 1rem;
-    --heading-font: "Gugi", sans-serif;
-    --heading-fontSize: 2.5rem;
-    --heading-fontColor: black;
+    --heroHeading-font: "Times New Roman";
+    --heroHeading-fontSize: 1.5rem;
+    --heroHeading-fontColor: black;
     --blurb-font: "Open Sans", sans-serif;
-    --blurb-fontSize: 1rem;
+    --blurb-fontSize: 0.5rem;
     --blurb-fontColor: black;
     --hero-btn1-color: rgb(160, 164, 184, 1);
     --hero-btn2-color: rgb(211, 215, 238); 
+    --hero-btnHover-color: black;
 }
 
 *, *::before, *::after {
@@ -20,28 +18,35 @@
 }
 
 .hero {
-  position: relative;
-  height: 35vh;
-  width: 100%;
-  display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
-  background-image: url('../assets/ricardo-gomez-angel.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
+    position: relative;
+    height: 35vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-image: url('../assets/ricardo-gomez-angel.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    /* padding: 20px 0px; */
+    overflow: hidden;
+}
+
+.hero > div {
+    display: flex;
 }
 
 .heroComponents{
     background-color: var(--hero-bg-color);
     height: 35vh;
     width: 100%;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
 
     display: flex;
     flex-direction: column;
-    margin: 0;
+    /* margin: 10px 0; */
     float: left;
     /* align-items: center; */
     justify-content: center;
@@ -51,11 +56,11 @@
 }
 
 .heroHeading {
-    font-family: var(--heading-font);
-    font-size: var(--heading-fontSize);
-    color: var(--heading-fontColor);
-    width: 60%;
-    margin: 5px 50px;
+    font-family: var(--heroHeading-font);
+    font-size: var(--heroHeading-fontSize);
+    color: var(--heroHeading-fontColor);
+    width: 80%;
+    /* margin: 5px 50px; */
     text-align: left;
 }
 
@@ -63,14 +68,14 @@
     font-family: var(--blurb-font);
     font-size: var(--blurb-fontSize);
     color: var(--blurb-fontColor);
-    width: 60%;
-    margin: 5px 50px;
+    width: 80%;
+    /* margin: 5px 50px; */
     text-align: left;
 }
 
 .heroButton-container {
-    width: 60%;
-    margin: 20px 50px;
+    width: 80%;
+    /* margin: 20px 50px; */
 
     display: flex;
     text-align: center;
@@ -83,40 +88,65 @@
 }
 
 .heroButton-1, .heroButton-2 {
-    background-color: var(--hero-btn1-color);
     font-size: 0.8rem;
     width: 8rem;
-    color: white !important;
     padding: 0.6rem 1.2rem;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    transition: font-weight 0.5s ease;
+    transition: background-color 0.8s ease;
     text-decoration: none;
     text-align: center;
-    margin: 0 10px 0 0px;
+    /* margin: 0 10px 0 0px; */
 }
 
+.heroButton-1 {
+    background-color: var(--hero-btn1-color);
+    color: white;
+}
+
+.heroButton-2 {
+    background-color: var(--hero-btn2-color);
+    color: black;
+}
+
+.heroButton-1:hover, .heroButton-2:hover {
+  font-weight: bold;
+  background-color: var(--hero-btnHover-color);
+  color: white;
+}
+
+
+
 .holdsAllCards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* background-color: var(--temp-color-2); */
-    width: 20rem;
-    margin: 0 auto;
-    gap: var(--holdsAllCards-gap);
+
 }
 
 
 /*---------- Smaller Screen ----------*/
-@media (min-width: 888px) {
+@media (min-width: 768px) {
 
-    .holdsAllCards {
-          display: flex;
-          flex-direction: row;
-          width: auto;
-          margin: var(--holdsAllCards-vert) var(--holdsAllCards-horz);
-          max-width: 888px;
-          margin: 0 auto;
-    }
+.heroComponents{
+
+}
+
+.heroHeading {
+    width: 80%;
+    margin: 5px 50px;
+    text-align: left;
+}
+
+.heroBlurb {
+    width: 80%;
+    margin: 5px 50px;
+    text-align: left;
+}
+
+.heroButton-container {
+    width: 100%;
+    margin: 20px 50px;
+    display: flex;
+    text-align: center;
+}
   
   }
 
@@ -124,12 +154,7 @@
 @media (min-width: 1440px) {
 
   .holdsAllCards {
-        display: flex;
-        flex-direction: row;
-        width: auto;
-        margin: var(--holdsAllCards-vert) var(--holdsAllCards-horz);
-        max-width: 1440px;
-        margin: 0 auto;
+
   }
 
 }

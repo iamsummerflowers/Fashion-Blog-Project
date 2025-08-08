@@ -25,6 +25,7 @@
     /* border: var(--temp-border); */
     border-radius: 1.5em;
     margin: 1em;
+    background-color: white;
   }
 
   .card > h3 {
