@@ -36,10 +36,11 @@
 
 .hero > div {
     display: flex;
+    background-color: var(--hero-bg-color);
 }
 
 .heroComponents{
-    background-color: var(--hero-bg-color);
+    /* background-color: var(--hero-bg-color); */
     height: 35vh;
     width: 100%;
     letter-spacing: 0.1rem;
@@ -60,7 +61,7 @@
     font-size: var(--heroHeading-fontSize);
     color: var(--heroHeading-fontColor);
     width: 80%;
-    /* margin: 5px 50px; */
+    margin: 15px;
     text-align: left;
 }
 
@@ -69,12 +70,13 @@
     font-size: var(--blurb-fontSize);
     color: var(--blurb-fontColor);
     width: 80%;
-    /* margin: 5px 50px; */
+    margin: 15px;
     text-align: left;
 }
 
 .heroButton-container {
     width: 80%;
+    margin: 15px;
     /* margin: 20px 50px; */
 
     display: flex;
@@ -82,7 +84,7 @@
 }
 
 .heroButton-wrap {
-    /* margin: 0 50px; */
+    margin: 0 2px 0 0;
     text-align: center;
     width: auto;
 }
@@ -122,30 +124,40 @@
 }
 
 
-/*---------- Smaller Screen ----------*/
+/*---------- Tablet ----------*/
 @media (min-width: 768px) {
 
-.heroComponents{
-
-}
-
 .heroHeading {
-    width: 80%;
-    margin: 5px 50px;
-    text-align: left;
+    font-size: 2.5rem;
 }
 
 .heroBlurb {
-    width: 80%;
-    margin: 5px 50px;
-    text-align: left;
+    font-size: 1.2rem;
 }
 
-.heroButton-container {
-    width: 100%;
-    margin: 20px 50px;
-    display: flex;
+
+  
+  }
+
+/*---------- Smaller Screen ----------*/
+@media (min-width: 888px) {
+
+.hero, .heroComponents{
+    height: 45vh;
+}
+
+.heroHeading {
+    font-size: 3.2rem;
+}
+
+.heroBlurb {
+    font-size: 1.5rem;
+}
+
+.heroButton-wrap {
+    margin: 0 5px 0 0;
     text-align: center;
+    width: auto;
 }
   
   }
@@ -153,8 +165,6 @@
 /*---------- XXL ----------*/
 @media (min-width: 1440px) {
 
-  .holdsAllCards {
 
-  }
 
 }

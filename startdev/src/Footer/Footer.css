@@ -25,7 +25,8 @@
   border-top: var(--footer-border);
   padding-top: 20px;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 20px;
   overflow: hidden;
 }
@@ -36,16 +37,11 @@
 }
 
 .footerLeft{
-  text-align: left;
   color: var(--footer-link-fontColor);
-  margin-left: 1rem;
 }
 
 .footerRight{
-  text-align: right;
-  padding-right: var(--footer-right);
   color: var(--footer-text-fontColor);
-  margin-right: 1rem;
 }
 
 .link {
@@ -55,7 +51,7 @@
   transition: font-weight 0.3s ease; /* "When a user hovers over the link the hover styles transition gradually*/
 }
 
-#twos:hover {
+a:hover {
   font-weight: bold; /* "When a user hovers over the link the text hover styles should be present*/
 }
 
@@ -68,7 +64,7 @@
 
 
 #sb {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin: 0;
   width: auto;
@@ -93,3 +89,33 @@
 #iconGH:hover {
   color: #d8ddef;
 }
+
+/*---------- Smaller Screen ----------*/
+@media (min-width: 888px) {
+
+.footer {
+
+  flex-direction: row;
+}
+
+.footerLeft{
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.footerRight{
+  text-align: right;
+  padding-right: var(--footer-right);
+  margin-right: 1rem;
+}
+
+#sb {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: auto;
+  font-size: var(--footer-body-fontSize);
+
+}
+  
+  }
