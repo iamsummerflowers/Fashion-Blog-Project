@@ -14,18 +14,30 @@ function Main() {
       <div className="holdsAllCards">
           <Card 
             id="firstCard"
-            header=" “Before you start...” "
-            bodyItems= {['Know what you’re building', 'Understand the flow', 'Collect requirements', 'Ideate the implementation', 'Organized modules']}
+            header="Before you start..."
+            tag=" “tag” "
+            blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+            author="John Smith"
+            date="Dec 15, 2025"
+            cardImage="cardImage1"
           />
           <Card 
             id="secondCard"
-            header=" “...This Template Includes” "
-            bodyItems = {['Installed base react library', 'Installed react-router library', 'Installed react-router-dom library', 'Tested router links']}
+            header="..This Template Includes"
+            tag=" “tag” "
+            blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+            author="John Smith"
+            date="Dec 15, 2025"
+            cardImage="cardImage2"
           />
           <Card 
             id="thirdCard"
-            header=" “Clone this template &...” "
-            bodyItems={['Add unique github name','Update react app name','Placeholder favicon','Apple-touch-icon image','Website title','Meta description']}
+            header="Clone this template &..."
+            tag=" “tag” "
+            blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+            author="John Smith"
+            date="Dec 15, 2025"
+            cardImage="cardImage3"
           />
       </div>
     </div>
