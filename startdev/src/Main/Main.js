@@ -21,7 +21,10 @@ function Main() {
             author="John Smith"
             date="Dec 15, 2025"
             cardImage="cardImage1"
-            articleComponent="ArticlePop1"
+            state="articleOpen1"
+            handler="toggleArticle1"
+            articleClass="article1"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
           />
           <Card 
             id="secondCard"
@@ -31,7 +34,10 @@ function Main() {
             author="John Smith"
             date="Dec 15, 2025"
             cardImage="cardImage2"
-            articleComponent="ArticlePop1"
+            state="articleOpen2"
+            handler="toggleArticle2"
+            articleClass="article2"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
           />
           <Card 
             id="thirdCard"
@@ -41,7 +47,10 @@ function Main() {
             author="John Smith"
             date="Dec 15, 2025"
             cardImage="cardImage3"
-            articleComponent="ArticlePop1"
+            state="articleOpen3"
+            handler="toggleArticle3"
+            articleClass="article3"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
           />
       </div>
     </div>

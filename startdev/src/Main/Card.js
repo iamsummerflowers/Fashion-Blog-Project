@@ -3,12 +3,11 @@ import React, { useState, useEffect, lazy, Suspense  } from 'react';
 import './Card.css';
 import ArticlePop1 from './ArticlePop1.js';
 import { HashLink } from 'react-router-hash-link';
+import { MdOutlineClose } from "react-icons/md";
 
 
-function Card({ id, cardImage, header, tag, blurb, author, date, articleComponent }) {
 
-  const ArticleComponent = lazy(() => import(`./${articleComponent}`));
-
+function Card({ id, cardImage, header, tag, blurb, author, date, state, handler, content, articleClass }) {
 
   const [articleOpen, setArticleOpen] = useState(false);
 
@@ -32,10 +31,23 @@ function Card({ id, cardImage, header, tag, blurb, author, date, articleComponen
             Read More
           </HashLink>
         </div>
-        <div className={`${articleOpen  ? 'articlePop' : 'hide'}`}>
-          <Suspense fallback={<div>...</div>}>
-            <ArticleComponent />
-          </Suspense>
+        <div className={`${articleOpen  ? 'article': 'hide'}`}>
+          <div className="articleHeadernExit">
+            <h1 className="articleHeader"> {header} </h1>
+            <MdOutlineClose className="articleExit" onClick={toggleArticle}/>
+          </div>
+          <div className={`articleBuffer ${cardImage}`}>
+            <div className="articleAuthornDate">
+              <p className="articleAuthor">{author}</p>
+              <p className="articleDate">{date}</p>
+            </div>
+            <div>
+              <p className="articleTag">{tag}</p>
+            </div>
+          </div>
+          <div className="articleContent">
+            {content}
+          </div>
         </div>
     </div>
   );
