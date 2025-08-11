@@ -16,7 +16,7 @@ function Main() {
           <Card 
             id="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  "
             header="Before you start..."
-            tag=" “tag” "
+            tag=" “tagtagtagtag” "
             blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
             author="John Smith"
             date="Dec 15, 2025"
@@ -24,12 +24,13 @@ function Main() {
             state="articleOpen1"
             handler="toggleArticle1"
             articleClass="article1"
+            sub-heading1 = "SubHeading1"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
           />
           <Card 
             id="secondCard"
             header="..This Template Includes"
-            tag=" “tag” "
+            tag=" “tagtagtagtag” "
             blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
             author="John Smith"
             date="Dec 15, 2025"
@@ -42,7 +43,7 @@ function Main() {
           <Card 
             id="thirdCard"
             header="Clone this template &..."
-            tag=" “tag” "
+            tag=" “tagtagtagtag” "
             blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
             author="John Smith"
             date="Dec 15, 2025"

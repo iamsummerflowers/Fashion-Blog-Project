@@ -31,22 +31,30 @@ function Card({ id, cardImage, header, tag, blurb, author, date, state, handler,
             Read More
           </HashLink>
         </div>
-        <div className={`${articleOpen  ? 'article': 'hide'}`}>
-          <div className="articleHeadernExit">
-            <h1 className="articleHeader"> {header} </h1>
-            <MdOutlineClose className="articleExit" onClick={toggleArticle}/>
-          </div>
-          <div className={`articleBuffer ${cardImage}`}>
-            <div className="articleAuthornDate">
-              <p className="articleAuthor">{author}</p>
-              <p className="articleDate">{date}</p>
+        <div className={`${articleOpen  ? 'articleOverlay': 'hide'}`}>
+          <div className={`${articleOpen  ? 'article': 'hide'}`}>
+            <div className="articleHeadernExit">
+              <h1 className="articleHeader"> {header} </h1>
+              <MdOutlineClose className="articleExit" onClick={toggleArticle}/>
             </div>
-            <div>
-              <p className="articleTag">{tag}</p>
+            <div className={`articleBuffer ${cardImage}`}>
+              <div className="articleAuthornDate">
+                <p className="articleAuthor">{author}</p>
+                <p className="articleDate">{date}</p>
+              </div>
+              <div className="articleTag">
+                <p>{tag}</p>
+              </div>
             </div>
-          </div>
-          <div className="articleContent">
-            {content}
+            <div className="articleContent">
+              <p> {content} </p>
+              <p> {content} </p>
+              <p> {content} </p>
+              <p> {content} </p>
+              <p> {content} </p>
+              <p> {content} </p>
+              
+            </div>
           </div>
         </div>
     </div>
