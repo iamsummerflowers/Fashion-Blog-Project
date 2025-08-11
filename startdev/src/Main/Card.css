@@ -146,3 +146,21 @@
     /* background-color: var(--thirdCard-bg-color); */
   }
 
+  .articlePop {
+    position: absolute ;
+    top: 50%;
+    left: 0;
+
+    width: 100vw;
+    height: 30vh;
+    /* background-color: red; */
+    /* margin: 0 auto; */
+    z-index: 6000;
+
+  }
+
+  .hide {
+    display: none;
+    background-color: none;
+    z-index: -6000;
+  }
