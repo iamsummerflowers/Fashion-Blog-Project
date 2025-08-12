@@ -1,13 +1,11 @@
-import React, { useState, useEffect, lazy, Suspense  } from 'react';
-
+import React, { useState, useEffect} from 'react';
 import './Card.css';
-import ArticlePop1 from './ArticlePop1.js';
 import { HashLink } from 'react-router-hash-link';
 import { MdOutlineClose } from "react-icons/md";
 
 
 
-function Card({ id, cardImage, header, tag, blurb, author, date, state, handler, content, articleClass }) {
+function Card({ id, cardImage, header, tag, blurb, author, date, subHeading1, subHeading2, subHeading3, content1, content2, content3, state, handler, content, articleClass }) {
 
   const [articleOpen, setArticleOpen] = useState(false);
 
@@ -47,13 +45,12 @@ function Card({ id, cardImage, header, tag, blurb, author, date, state, handler,
               </div>
             </div>
             <div className="articleContent">
-              <p> {content} </p>
-              <p> {content} </p>
-              <p> {content} </p>
-              <p> {content} </p>
-              <p> {content} </p>
-              <p> {content} </p>
-              
+              <h2> {subHeading1} </h2>
+              <p> {content1} </p>
+              <h2> {subHeading2} </h2>
+              <p> {content2} </p>
+              <h2> {subHeading3} </h2>
+              <p> {content3} </p>
             </div>
           </div>
         </div>

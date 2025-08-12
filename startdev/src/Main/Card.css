@@ -17,7 +17,9 @@
   --articleButton-bg:rgb(160, 164, 184, 1);
   --articleButton-fontColor: rgb(64, 67, 75);
   --articleButton-hover: Black;
-  --articleBufferColor: rgb(216, 221, 239, 0.8);
+  --articleBufferColor1: white;
+  --articleBufferColor2: rgb(64, 67, 75, 0.8);
+
 
 }
 
@@ -173,21 +175,25 @@
    flex-direction: column; */
    
     position: relative;
-    /* top: 0;
-    left: 0; */
-    width: 80vw;
+    width: 90vw;
     height: 80vh;
-    background-color: white; /* Slightly darker overlay */
+    background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     /* align-items: center; */
     z-index: 1000;
     overflow-y: scroll;
     overflow-x: hidden;
     /* margin: 0 auto; */
+    /* padding: 0 auto; */
     /* max-height: 100%; */
 
+  }
+
+  .article > div {
+    margin: 0 auto;
+    /* padding: 15px; */
   }
 
   .hide {
@@ -204,12 +210,12 @@
     align-items: center; 
     justify-content: space-between;
     height: fit-content;
-    background-color: blue;
+    background-color: white;
 
   }
 
       .articleHeader {
-        font-size: 1rem;
+        font-size: 2rem;
         width: fit-content;
         margin-left: 1rem;
       }
@@ -219,6 +225,15 @@
         font-size: 1.2rem;
         width: fit-content;
         margin-right: 1.5rem;
+        background-color: #21d19f;
+        border-radius: 0.3rem;
+        transition: background-color 0.3s ease-in-out;
+        /* padding: 0.5rem; */
+      }
+
+      .articleExit:hover {
+        transition: background-color 0.3s ease-in-out;
+        background-color: var(--articleBufferColor2);
       }
 
   .articleBuffer {
@@ -228,8 +243,9 @@
     align-items: center;
     background-size: cover;
     background-position: center;
-    height: 70%;
+    height: 30vh;
     width: 100%;
+    padding: 10vh 0;
     /* border-radius: 1.5rem  1.5rem 0 0 ; */
     /* margin: -1rem 0; */
     /* background-color: var(--articleBufferColor); */
@@ -240,11 +256,12 @@
         position: relative;
         transform: translateY(8vh);
         /* border-radius: 2rem; */
-        background-color: var(--articleBufferColor);
+        background-color: var(--articleBufferColor1);
         color: var(--tagColor-font);
-        width: 30vw;
+        height: 4vh;
+        width: 35vw;
         /* margin: 0 8px; */
-        padding: 8px 30px;
+        padding: 8px 0;
         font-size: 0.7rem;
         font-weight: bold;
       }
@@ -258,13 +275,13 @@
       .articleTag {
         display: flex;
         width: 100%;
-        background-color: var(--articleBufferColor);
+        background-color: var(--articleBufferColor2);
         transform: translateY(8vh);
-        border-radius: 2rem;
+        border-radius: 0 2rem 2rem 0;
         background-color: var(--tagColor-bg);
         color: var(--tagColor-font);
         width: fit-content;
-        margin: 0 8px 0 70px;
+        margin: 0 8px 0 10px;
         padding: 4px 18px;
         font-size: 0.7rem;
         font-weight: bold;
@@ -277,8 +294,53 @@
     /* top: 0; */
   }
 
+      .articleContent > h2 {
+        display: flex;
+        text-align: left;
+        margin: 0.5rem;
+      }
+
       .articleContent > p {
         display: flex;
         text-align: left;
+        padding: 1rem;
+        margin: 0;
         /* position: relative; */
       }
+
+/*---------- Tablet ----------*/
+@media (min-width: 768px) {
+
+
+
+  
+  }
+
+/*---------- Smaller Screen ----------*/
+@media (min-width: 888px) {
+.article {
+  max-width:40vw;
+  margin: 0 auto;
+}
+
+.articleAuthornDate {
+  width: 10vw;
+  padding: 8px 0;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.articleAuthor, .articleDate {
+  width: 10vw;
+  margin: 0 1rem;
+  /* background-color: var(--articleBufferColor); */
+}
+  
+  }
+
+/*---------- XXL ----------*/
+@media (min-width: 1440px) {
+
+
+
+}
