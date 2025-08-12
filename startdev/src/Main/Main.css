@@ -1,11 +1,10 @@
 :root {
-    --main-bg-color: #a0a4b8; 
-    --main-vert: 2.5rem;
+    --main-bg-color: white; 
     --holdsAllCards-vert: 2.5rem;
     --holdsAllCards-horz: 2.5rem;
     --holdsAllCards-gap: 1rem;
-    --title-font: "Gugi", sans-serif;
-    --title-fontSize: 2.5rem;
+    --title-font: "Open Sans", sans-serif;
+    --title-fontSize: 1.5rem;
     --title-fontColor: black;
 }
 
@@ -19,7 +18,8 @@
     width: 100%;
     background-color: var(--main-bg-color);
     border: var(--main-bg-color);
-    margin: 0 0 var(--main-vert) 0;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
     flex-direction: column;
     overflow: hidden;
 }
@@ -32,12 +32,12 @@
     /* background-color: var(--main-bg-color); */
     /* background-color: white; */
     width: 100%;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
 
     display: flex;
     align-items: center;
     position: relative;
-
+    margin: 2rem 0;
     padding: 2rem 0;
 }
 

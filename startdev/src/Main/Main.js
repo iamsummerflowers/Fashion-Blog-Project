@@ -8,14 +8,14 @@ function Main() {
   return (
     <div className="main" id="articles">
       <div className="mainSubheader">
-        <h1>Articles</h1>
-        <img src={logo} alt="Logo"/>
+        <h1>...check out these quick reads...</h1>
+        {/* <img src={logo} alt="Logo"/> */}
       </div>
       <div className="holdsAllCards">
           <Card 
             id="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  "
             header="Before you start..."
-            tag=" “tagtagtagtag” "
+            tag="Design"
             blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
             author="John Smith"
             date="Dec 15, 2025"
@@ -33,7 +33,7 @@ function Main() {
           <Card 
             id="secondCard"
             header="..This Template Includes"
-            tag=" “tagtagtagtag” "
+            tag="Technology"
             blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
             author="John Smith"
             date="Dec 15, 2025"
@@ -51,7 +51,7 @@ function Main() {
           <Card 
             id="thirdCard"
             header="Clone this template &..."
-            tag=" “tagtagtagtag” "
+            tag="Business"
             blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
             author="John Smith"
             date="Dec 15, 2025"
