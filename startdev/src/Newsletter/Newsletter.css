@@ -1,17 +1,12 @@
 :root {
-    --hero-bg-color: rgb(160, 164, 184, 0.7); 
+    --newsletterBgColor: #a0a4b8; 
     --main-vert: 2.5rem;
-    --holdsAllCards-vert: 2.5rem;
-    --holdsAllCards-horz: 2.5rem;
-    --holdsAllCards-gap: 1rem;
-    --heading-font: "Gugi", sans-serif;
-    --heading-fontSize: 2.5rem;
-    --heading-fontColor: black;
-    --blurb-font: "Open Sans", sans-serif;
-    --blurb-fontSize: 1rem;
-    --blurb-fontColor: black;
-    --hero-btn1-color: rgb(160, 164, 184, 1);
-    --hero-btn2-color: rgb(211, 215, 238); 
+    --newsletterHeaderFont: "Open Sans", sans-serif;
+    --newsletterHeaderFontColor: black;
+    --newsBlurb-font: "Open Sans", sans-serif;
+    --newsBlurb-fontColor: black;
+    --newsletterButtonColor: black;
+    --newsletterButtonHvrColor: black; 
 }
 
 *, *::before, *::after {
@@ -20,61 +15,52 @@
 }
 
 .Newsletter {
-  position: relative;
-  height: 35vh;
-  width: 100%;
-  display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
-  background-image: url('../assets/ricardo-gomez-angel.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 3rem auto;
+    background-color: var(--newsletterBgColor);
 }
 
 .newsletterComponents{
-    background-color: var(--hero-bg-color);
-    height: 35vh;
-    width: 100%;
-    letter-spacing: 0.5rem;
-
     display: flex;
     flex-direction: column;
-    margin: 0;
-    float: left;
-    /* align-items: center; */
-    justify-content: center;
-    position: relative;
-    text-align: left;
-    padding: 2rem 0;
+    justify-items: center;
+    margin: 0 auto;
+    width: 50vw;
 }
 
 .newsletterHeading {
-    font-family: var(--heading-font);
-    font-size: var(--heading-fontSize);
-    color: var(--heading-fontColor);
-    width: 60%;
-    margin: 5px 50px;
-    text-align: left;
+    font-family: var(--newsletterHeaderFont);
+    font-size: 2rem;
+    color: var(--newsletterHeaderFontColor);
+    /* text-align: center; */
+    margin: 0 0 10px 0;
 }
 
-.newsletterBlurb {
-    font-family: var(--blurb-font);
-    font-size: var(--blurb-fontSize);
-    color: var(--blurb-fontColor);
-    width: 60%;
-    margin: 5px 50px;
-    text-align: left;
+.newsletterBlurb1, .newsletterBlurb2 {
+    font-family: var(--newsBlurb-font);
+    font-size: 0.9rem;
+    color: var(--newsBlurb-fontColor);
+    /* text-align: center; */
+    margin: 0px auto 10px auto;
+    width: 50vw;
 }
 
-.newsletterButton-container {
-    width: 60%;
-    margin: 20px 50px;
-
+.newsletterEmailSubmission {
     display: flex;
-    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto 10px auto;
+}
+
+.newsletterEmail {
+    height: 2.8rem;
+    width: 450px;
+    margin: auto 5px;
+    border-radius: 4px;
+    font-size: 1rem;;
 }
 
 .newsletterButton-wrap {
@@ -83,21 +69,23 @@
     width: auto;
 }
 
-.newsletterButton-1, .newsletterButton-2 {
-    background-color: var(--hero-btn1-color);
+.newsletterButton {
+    background-color: var(--newsletterButtonColor);
     font-size: 0.8rem;
     width: 8rem;
     color: white !important;
     padding: 0.6rem 1.2rem;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    transition: font-weight 0.3s ease;
     text-decoration: none;
     text-align: center;
     margin: 0 10px 0 0px;
 }
 
-.holdsAllCards {
-
+.newsletterButton:hover {
+  background-color: var(--newsletterButtonHvrColor) !important;
+  font-weight: bold !important;
+  transition: font-weight 0.3s ease;
 }
 
 

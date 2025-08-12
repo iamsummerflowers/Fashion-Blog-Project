@@ -10,7 +10,7 @@
 --header-navlogo-font-style: "Times New Roman";
 --header-navlinks-color: black;
 --subscribe-btn-color: #a0a4b8;
---subscribe-btnhover-color: #626470;
+--subscribe-btnhover-color: black;
 }
 
 *, *::before, *::after {
