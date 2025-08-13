@@ -39,6 +39,14 @@ html {
   position: relative;
 }
 
+#appMain {
+  position: relative;
+}
+
+#appNewsletter {
+  position: relative;
+}
+
 
 /* after the fact */
 

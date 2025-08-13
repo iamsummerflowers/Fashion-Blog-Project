@@ -15,27 +15,32 @@
 }
 
 .Newsletter {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-items: center;
     margin: 3rem auto;
     background-color: var(--newsletterBgColor);
+    width: 100%;
 }
 
 .newsletterComponents{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-items: center;
     margin: 0 auto;
-    width: 50vw;
+    width: 100%;
+    text-align: center;
 }
 
 .newsletterHeading {
     font-family: var(--newsletterHeaderFont);
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--newsletterHeaderFontColor);
     /* text-align: center; */
-    margin: 0 0 10px 0;
+    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .newsletterBlurb1, .newsletterBlurb2 {
@@ -43,8 +48,9 @@
     font-size: 0.9rem;
     color: var(--newsBlurb-fontColor);
     /* text-align: center; */
-    margin: 0px auto 10px auto;
-    width: 50vw;
+    margin: 10px 0px 10px 0px;
+    /* margin: 0 auto; */
+    width: 100%;
 }
 
 .newsletterEmailSubmission {
@@ -52,7 +58,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 0px auto 10px auto;
+    margin: 0px 0px 10px 0px;
+    margin: 0 auto;
 }
 
 .newsletterEmail {
@@ -60,13 +67,15 @@
     width: 450px;
     margin: auto 5px;
     border-radius: 4px;
-    font-size: 1rem;;
+    font-size: 0.8rem;
+    text-align: center;
 }
 
 .newsletterButton-wrap {
     /* margin: 0 50px; */
     text-align: center;
     width: auto;
+    /* margin: 0 auto; */
 }
 
 .newsletterButton {
@@ -79,7 +88,7 @@
     transition: font-weight 0.3s ease;
     text-decoration: none;
     text-align: center;
-    margin: 0 10px 0 0px;
+    margin: 0px 10px 0px 0px;
 }
 
 .newsletterButton:hover {
@@ -92,17 +101,30 @@
 /*---------- Smaller Screen ----------*/
 @media (min-width: 888px) {
 
-    .holdsAllCards {
+.newsletterComponents{
+    /* width: 60vw; */
+}
 
-    }
+.newsletterHeading {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.newsletterBlurb1, .newsletterBlurb2 {
+    /* font-size: 0.9rem; */
+    /* width: 40vw; */
+    margin: 15px 0px;
+}
+
+.newsletterButton {
+    margin: 0px 10px 0px 0px;
+}
   
   }
 
 /*---------- XXL ----------*/
 @media (min-width: 1440px) {
 
-  .holdsAllCards {
 
-  }
 
 }
