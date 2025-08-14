@@ -1,16 +1,15 @@
 :root {
-  --footer-bg-color: #009213;
-  --footer-vert: none;
+  --footer-bg-color: black;
   --twos-horz: 3.5rem;
   --footer-right: 3.5rem;
   --iconGH-horz: 1rem;
   --footer-body-font: "Open Sans", sans-serif;
   --footer-body-fontSize: 1rem;
   --footer-icon-fontSize: 1.5rem;
-  --footer-link-fontColor: black;
-  --footer-text-fontColor: black;
-  --footer-icon-fontColor: black;
-  --footer-border: solid 5px black;
+  --footer-link-fontColor: #a0a4b8;
+  --footer-text-fontColor: #a0a4b8;
+  --footer-icon-fontColor: #a0a4b8;
+  --footer-borderColor: #a0a4b8;
 }
 
 *, *::before, *::after {
@@ -41,12 +40,13 @@
 }
 
 .footerMain {
-  background-color: purple;
+  background-color: var(--footer-bg-color);
 }
 
 .footerCopy {
-  border-top: var(--footer-border);
-  background-color: yellow;
+  border-top: 0.1rem solid var(--footer-borderColor);
+  border-width: 80%;
+  background-color: var(--footer-bg-color);
 }
 
 .footerColumn {
@@ -57,10 +57,24 @@
 
 .footerColumnHeader{
   color: white;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin: 0.5rem auto;
 }
 
-.footerColumnHeader, .footerBlurb, .footerSocialLink, .footerLink, .footerContactInfo{
-  color: #a0a4b8;
+.footerBlurb, .footerSocialLink, .footerLink, .footerContactInfo, .footerCopy{
+  color: var(--footer-text-fontColor);
+  font-size: 0.9rem;
+}
+
+#Curated{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footerBlurb {
+  padding: 0 2rem;
+  text-align: center;
+  margin-top: 0;
 }
 
 .footerSocials {
@@ -77,24 +91,25 @@
 }
 
 .footerContactInfo{
-  display: flex;
-  flex-direction: row;
+  display: inline;
+  /* flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: 100%;
+  width: 100%; */
   /* padding: 0 2rem; */
 }
 
 .footerIcon {
-  text-align: right;
+  /* text-align: right;
   margin-left: 2rem;
   width: fit-content;
-  width: 50%;
+  width: 50%; */
 }
 
 .footerContactInfo > p {
-  text-align: left;
+  /* text-align: left; */
+  /* padding-right: 2rem; */
 }
 
 #iconGH {
@@ -112,11 +127,104 @@
 }
 
 /*---------- Smaller Screen ----------*/
-@media (min-width: 888px) {
+@media (min-width: 768px) {
 
 .footer {
+  /* width: 100%; */
+  /* margin: 0 50px; */
+  padding: 2rem 5rem;
+}
 
+.footerMain, .footerCopy {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  width: 100%;
+  /* margin: 0 1rem; */
+  padding: 0 auto;
+
+}
+
+.footerMain {
+  /* background-color: green; */
+  margin: 1.5rem auto;
+}
+
+.footerColumn {
+  /* justify-content: start; */
+  text-align: left;
+  margin: 0 1rem;
+  /* background-color: red; */
+}
+
+.footerBlurb {
+  text-align: left;
+  padding-left: 0;
+}
+
+.footerSocials {
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin: 0;
+  text-align: left;
+  padding: 0;
+
+  /* padding: 0 5rem; */
+}
+
+.footerSocialLink{
+  text-align: left;
+  display: inline;
+  width: fit-content;
+  margin: 0 1rem 0 0;
+
+}
+
+.footerColumnHeader {
+  /* text-align: left; */
+  /* background-color: green; */
+}
+
+.footerContactInfo{
+  /* display: inline; */
   /* flex-direction: row; */
+  /* align-items: center; */
+  /* width: 100%; */
+  margin: 0.5rem auto;
+  /* flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%; */
+  /* padding: 0 2rem; */
+}
+
+.footerContactInfo > p{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  /* flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%; */
+  /* padding: 0 2rem; */
+}
+
+.footerIcon{
+
+  /* margin: 0; */
+  width: fit-content;
+  margin-right: 0.5rem;
+}
+.footerCopy {
+  /* border-top: var(--footer-border); */
+  /* background-color: blue; */
 }
 
 
