@@ -1,5 +1,5 @@
 :root {
-  --footer-bg-color: #a0a4b8;
+  --footer-bg-color: #009213;
   --footer-vert: none;
   --twos-horz: 3.5rem;
   --footer-right: 3.5rem;
@@ -20,60 +20,81 @@
 
 .footer {
   display: flex;
-  width: 95%;
-  background-color: var(--footer-bg-color);
-  border-top: var(--footer-border);
-  padding-top: 20px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 20px;
-  overflow: hidden;
+  width: 100%;
+  /* height: 50vh; */
+  background-color: var(--footer-bg-color);
+  /* border-top: var(--footer-border); */
+  /* padding-top: 20px; */
+  margin-bottom: 0 auto;
+  /* overflow: hidden; */
 }
 
-.footer > div {
-  background-color: var(--footer-bg-color);
+.footerMain, .footerCopy {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
 }
 
-.footerLeft{
-  color: var(--footer-link-fontColor);
+.footerMain {
+  background-color: purple;
 }
 
-.footerRight{
-  color: var(--footer-text-fontColor);
+.footerCopy {
+  border-top: var(--footer-border);
+  background-color: yellow;
 }
 
-.link {
-  font-family: var(--footer-body-font);
-  font-size: var(--footer-body-fontSize);
-  color: var(--footer-link-fontColor);
-  transition: font-weight 0.3s ease; /* "When a user hovers over the link the hover styles transition gradually*/
-}
-
-a:hover {
-  font-weight: bold; /* "When a user hovers over the link the text hover styles should be present*/
-}
-
-#twos {
-  /* padding-left: var(--twos-horz);
-  background-color: var(--temp-color-3); */
-  width: auto;
-
-}
-
-
-#sb {
-  display: inline-flex;
-  align-items: center;
-  margin: 0;
-  width: auto;
-  font-size: var(--footer-body-fontSize);
-
-}
-
-#sb-text {
+.footerColumn {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
+}
+
+.footerColumnHeader{
+  color: white;
+}
+
+.footerColumnHeader, .footerBlurb, .footerSocialLink, .footerLink, .footerContactInfo{
+  color: #a0a4b8;
+}
+
+.footerSocials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0 5rem;
+}
+
+.footerLink{
+  margin: 0.5rem auto;
+}
+
+.footerContactInfo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  /* padding: 0 2rem; */
+}
+
+.footerIcon {
+  text-align: right;
+  margin-left: 2rem;
+  width: fit-content;
+  width: 50%;
+}
+
+.footerContactInfo > p {
+  text-align: left;
 }
 
 #iconGH {
@@ -95,27 +116,9 @@ a:hover {
 
 .footer {
 
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 
-.footerLeft{
-  text-align: left;
-  margin-left: 1rem;
-}
 
-.footerRight{
-  text-align: right;
-  padding-right: var(--footer-right);
-  margin-right: 1rem;
-}
-
-#sb {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  width: auto;
-  font-size: var(--footer-body-fontSize);
-
-}
   
   }
