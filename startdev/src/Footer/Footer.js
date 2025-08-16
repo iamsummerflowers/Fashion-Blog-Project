@@ -12,6 +12,9 @@ import { FaInstagram } from "react-icons/fa";
 
 
 function Footer() {
+
+  const currentYear = new Date().getFullYear();
+
     return (
       <div className="footer" id="footer">
 
@@ -82,7 +85,7 @@ function Footer() {
             </div>
           </div>
           <div className="footerCopy">
-            <p>Row for copyright information</p>
+            <p>&copy; {currentYear} Curated. All rights reserved.</p>
           </div>
 
         {/* <div className="footerLeft">
