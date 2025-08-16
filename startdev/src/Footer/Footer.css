@@ -60,6 +60,7 @@
   font-weight: bolder;
   font-size: 1.1rem;
   margin: 0.5rem auto;
+  /* text-transform: uppercase; */
 }
 
 .footerBlurb, .footerSocialLink, .footerLink, .footerContactInfo, .footerCopy{
@@ -88,6 +89,11 @@
 
 .footerLink{
   margin: 0.5rem auto;
+  text-decoration: none;
+}
+
+.footerLink:hover, .footerSocialLink:hover{
+  color: white;
 }
 
 .footerContactInfo{
@@ -105,6 +111,7 @@
   margin-left: 2rem;
   width: fit-content;
   width: 50%; */
+  font-size: 1.1rem;
 }
 
 .footerContactInfo > p {
