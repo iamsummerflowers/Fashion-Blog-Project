@@ -39,7 +39,7 @@
   .cardImage {
     background-size: cover;
     background-position: center;
-    height: 12vh;
+    height: 15vh;
     border-radius: 1.5rem  1.5rem 0 0 ;
     margin: -1rem 0;
   }
@@ -225,7 +225,7 @@
         font-size: 1.2rem;
         width: fit-content;
         margin-right: 1.5rem;
-        background-color: #21d19f;
+        /* background-color: #21d19f; */
         border-radius: 0.3rem;
         transition: background-color 0.3s ease-in-out;
         /* padding: 0.5rem; */
@@ -258,7 +258,7 @@
         /* border-radius: 2rem; */
         background-color: var(--articleBufferColor1);
         color: var(--tagColor-font);
-        height: 4vh;
+        height: fit-content;
         width: 35vw;
         /* margin: 0 8px; */
         padding: 8px 0;
