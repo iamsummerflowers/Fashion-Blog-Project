@@ -311,17 +311,21 @@
 /*---------- Tablet ----------*/
 @media (min-width: 768px) {
 
+.cardImage {
+  height: 12vh;
+}
 
 
   
   }
 
 /*---------- Smaller Screen ----------*/
-@media (min-width: 768px) {
+@media (min-width: 888px) {
 
 .cardImage {
-  height: 12vh;
+  height: 13vh;
 }
+
 
 .article {
   max-width:40vw;
@@ -343,11 +347,20 @@
   
   }
 
-/*---------- XXL ----------*/
-@media (min-width: 888px) {
+/*---------- Larger Screen ----------*/
+@media (min-width: 1024px) {
 
 .cardImage {
-  height: 15vh;
+  height: 12vh;
+}
+
+}
+
+/*---------- XXL ----------*/
+@media (min-width: 1440px) {
+
+.cardImage {
+  height: 12vh;
 }
 
 }
