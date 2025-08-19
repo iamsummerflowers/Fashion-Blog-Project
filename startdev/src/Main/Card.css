@@ -18,7 +18,7 @@
   --articleButton-fontColor: rgb(64, 67, 75);
   --articleButton-hover: Black;
   --articleBufferColor1: white;
-  --articleBufferColor2: rgb(64, 67, 75, 0.8);
+  --articleBufferColor2: rgb(216, 221, 239, 0.8);
 
 
 }
@@ -317,7 +317,12 @@
   }
 
 /*---------- Smaller Screen ----------*/
-@media (min-width: 888px) {
+@media (min-width: 768px) {
+
+.cardImage {
+  height: 12vh;
+}
+
 .article {
   max-width:40vw;
   margin: 0 auto;
@@ -339,8 +344,10 @@
   }
 
 /*---------- XXL ----------*/
-@media (min-width: 1440px) {
+@media (min-width: 888px) {
 
-
+.cardImage {
+  height: 15vh;
+}
 
 }
